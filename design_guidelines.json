@@ -1,0 +1,122 @@
+{
+  "project_name": "Champion Horse — Streetwear E-Commerce (void™ aesthetic)",
+  "theme": {
+    "mode": "dark",
+    "aesthetic": "voidmerch minimal dark streetwear",
+    "color_archetype": "ARCHETYPE 5 / SWISS DARK - High contrast stark monochrome with industrial acid/lime accent",
+    "forbidden_colors": ["orange", "#7351B7", "#1B93A4"]
+  },
+  "colors": {
+    "bg_main": "#080808",
+    "bg_surface": "#111111",
+    "bg_surface_elevated": "#1A1A1A",
+    "border_subtle": "#222222",
+    "border_strong": "#333333",
+    "text_primary": "#F5F5F7",
+    "text_secondary": "#8E8E93",
+    "text_muted": "#55555C",
+    "accent_primary": "#D4FF00",
+    "accent_primary_hover": "#C0E600",
+    "accent_glow": "rgba(212, 255, 0, 0.15)",
+    "accent_subtle": "#1E2A00",
+    "accent_secondary": "#E2E8F0",
+    "badge_bg": "#121212"
+  },
+  "typography": {
+    "heading_font": "Space Grotesk, Syne, Cabinet Grotesk, sans-serif",
+    "body_font": "Inter, DM Sans, sans-serif",
+    "mono_font": "JetBrains Mono, Roboto Mono, monospace",
+    "scale": {
+      "hero_title": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter uppercase leading-none",
+      "section_title": "text-2xl sm:text-4xl font-bold tracking-tight uppercase",
+      "product_title": "text-xl sm:text-2xl font-bold tracking-tight uppercase",
+      "card_heading": "text-base sm:text-lg font-medium tracking-normal",
+      "body": "text-sm sm:text-base font-normal text-gray-300 leading-relaxed",
+      "caption": "text-xs font-mono tracking-wider text-gray-500 uppercase",
+      "tag": "text-[10px] font-mono tracking-widest uppercase px-2 py-0.5 border border-white/20"
+    }
+  },
+  "layout_and_navigation": {
+    "sidebar": {
+      "desktop": "Collapsible or persistent ultra-clean side navigation bar (left side, 260px wide or fixed drawer) with minimalist brand identity, menu items (Home, Catálogo, Coleções, Lookbook, Sobre, Admin, Carrinho), search input trigger, and language/currency indicator.",
+      "mobile": "Slide-over drawer menu triggered by a minimalist hamburger menu button with z-50 overlay."
+    },
+    "header_topbar": {
+      "style": "Minimal sticky topbar with glassmorphism backdrop-blur-xl bg-black/80 border-b border-white/10 px-4 sm:px-8 py-4 flex items-center justify-between z-40",
+      "elements": "Brand logo ('CHAMPION HORSE' / 'CH™'), category fast-tabs, Search bar, Quick Cart trigger button with live badge counter"
+    },
+    "grid_system": {
+      "catalog": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8",
+      "shop_the_look": "grid grid-cols-1 md:grid-cols-3 gap-6",
+      "admin_dashboard": "grid grid-cols-1 md:grid-cols-4 gap-6"
+    }
+  },
+  "key_components": {
+    "hero_carousel": {
+      "description": "Full-bleed or wide-aspect ratio dark hero showcasing 'Camiseta Champion Horse' with studio photography overlay, heavy oversized typography, price tag in BRL (R$ 189,90), quick size selector chips, and glowing 'ADICIONAR À SACOLA' primary CTA.",
+      "features": ["3 high-res studio hero slides", "Interactive quick view button", "Raw technical specs overlay"]
+    },
+    "product_page": {
+      "gallery": "Large multi-angle gallery with main portrait focal image and thumbnail selector (Front, Back, Detail, On-Model). Light zoom on hover.",
+      "selectors": {
+        "color": "Color swatches for Branco (#FFFFFF), Preto (#000000) - Note: Orange is strictly forbidden per user choice.",
+        "size": "P, M, G, GG pill buttons with real-time stock indicator and size guide modal trigger."
+      },
+      "cta": "Full-width primary button with acid lime accent (#D4FF00), dark black bold text, and crisp hover scale effect."
+    },
+    "side_cart": {
+      "type": "Slide-over Sheet component (right side)",
+      "features": ["Free shipping progress bar (e.g. 'Faltam R$ 50 para Frete Grátis')", "Quantity increment/decrement buttons", "Subtotal calculation in BRL", "Guest Checkout CTA button ('FINALIZAR COMPRA')"]
+    },
+    "checkout": {
+      "type": "Guest fast checkout stream-lined step (Mobile-first)",
+      "steps": ["Dados Pessoais (Nome, Email, CPF, Telefone)", "Endereço de Entrega (CEP com auto-preenchimento simulated, Rua, Bairro, Cidade, Estado)", "Pagamento PayPal Direct / Card / PIX simulation"],
+      "redirects": "Success page (/checkout/sucesso) & Error/Cancel page (/checkout/erro)"
+    },
+    "hidden_admin": {
+      "route": "/admlucas",
+      "auth": "JWT + Bcrypt authentication flow with hidden login screen",
+      "features": [
+        "Product CRUD (Create, Edit, Delete, Toggle active status)",
+        "Image upload dropzone / URL picker",
+        "Order management (Status: Pendente, Pago, Enviado, Entregue, Cancelado)",
+        "Sales statistics summary cards"
+      ]
+    }
+  },
+  "image_urls": {
+    "hero_products": [
+      {
+        "url": "https://images.unsplash.com/photo-1778759335272-2aea6c337a63?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwzfHxzdHJlZXR3ZWFyJTIwbW9kZWwlMjBkYXJrJTIwdC1zaGlydCUyMHN0dWRpb3xlbnwwfHx8fDE3ODg5MTY3ODh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Camiseta Champion Horse Oversized - Studio Model Front"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1763750581767-b367bcd6c117?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwyfHxzdHJlZXR3ZWFyJTIwbW9kZWwlMjBkYXJrJTIwdC1zaGlydCUyMHN0dWRpb3xlbnwwfHx8fDE3ODg5MTY3ODh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Camiseta Champion Horse - Studio Fit Full View"
+      }
+    ],
+    "apparel_mockups": [
+      {
+        "url": "https://images.unsplash.com/photo-1610502778270-c5c6f4c7d575?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxibGFjayUyMHQtc2hpcnQlMjBhcHBhcmVsJTIwbW9ja3Vwc3xlbnwwfHx8fDE3ODg5MTY3OTF8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Camiseta Champion Horse Essential - Black Crew Neck"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1562135291-7728cc647783?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwzfHxibGFjayUyMHQtc2hpcnQlMjBhcHBhcmVsJTIwbW9ja3Vwc3xlbnwwfHx8fDE3ODg5MTY3OTF8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Camiseta Champion Horse Minimalist Pack"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the dark voidmerch aesthetic. Never use orange anywhere.",
+    "Use Acid Lime (#D4FF00) as the high-impact accent color for primary buttons, active tags, and focus highlights.",
+    "Ensure language is Portuguese (BR) and currency formatted as BRL (R$). Initial featured product is 'Camiseta Champion Horse'.",
+    "Keep typography sharp and technical: Space Grotesk/Syne for big uppercase titles, JetBrains Mono for tags, sizes, and price specs.",
+    "Implement the side menu, side cart drawer, guest checkout flow, success/failure screens, search modal, and hidden admin route at /admlucas.",
+    "Add data-testid attributes to all interactive components (buttons, inputs, links, cart items, size options, etc.)"
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Never apply transition: all globally; target specific properties like opacity, border-color, and background-color.",
+    "Keep generous padding and spacing (p-6, p-8, gap-8) with clear contrast and non-transparent dark surfaces.",
+    "Ensure mobile drawer menus and cart sheets have proper z-index (z-50) and accessible contrast."
+  ]
+}
